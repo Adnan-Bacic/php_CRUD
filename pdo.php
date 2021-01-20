@@ -17,7 +17,7 @@ try{
         $stmt->execute();
 
         if($stmt->rowCount() > 0){
-            header('location: pdo.php');
+            header('location: index.php');
             exit();
         }
     }
@@ -47,7 +47,7 @@ catch(Exception $e){
                 echo "not updated";
             }
     
-            header('location: pdo.php');
+            header('location: index.php');
             exit();
         }
     }
@@ -74,7 +74,7 @@ try{
             echo "not deleted";
         }
 
-        header('location: pdo.php');
+        header('location: index.php');
         exit();
     }
 }
@@ -83,18 +83,7 @@ catch(Exception $e){
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDO</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
+    <div class="container" id="pdo">
         <div class="row">
             <div class="col-12">
                 <h1>PDO crud</h1>
@@ -197,5 +186,3 @@ catch(Exception $e){
             </div>
         </div>
     </div>
-</body>
-</html>
