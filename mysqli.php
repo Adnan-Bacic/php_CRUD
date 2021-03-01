@@ -93,7 +93,27 @@ catch(Exception $e){
 }
 ?>
 
-    <div class="container d-none" id="mysqli">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYSQLI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <a href="index.php">
+            <button class="btn btn-info">See PDO</button>
+            </a>
+        </div>
+    </div>
+</div>
+    <div class="container">
         <div class="row">
             <div class="col-12">
                 <h1>MYSQLI crud</h1>
@@ -194,3 +214,5 @@ catch(Exception $e){
             </div>
         </div>
     </div>
+</body>
+</html>
